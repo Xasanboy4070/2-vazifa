@@ -29,66 +29,24 @@ input {
   width: 110px;
   height: 20px;
   margin-top: 20px;
-}
-.colorDec::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color: red;
   border-radius: 5px 5px 0 0;
-
-  transition: transform 300ms ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.colorDec:hover::before,
-.colorDec:focus::before {
-  transform: scaleX(1);
-}
-
-.colorDec {
-  z-index: 99;
-}
-.animeInc::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
   background-color: red;
-  border-radius: 5px 5px 0 0;
-
-  transition: transform 300ms ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.animeInc:hover::before,
-.animeInc:focus::before {
-  transform: scaleX(1);
-}
-
-.animeInc {
-  z-index: 99;
 }
 
 .colorInc {
-  width: 110px;
+  width: 0px;
   height: 20px;
   border-radius: 5px 5px 0 0;
   margin-top: 20px;
+  background-color: red;
+  transition: 3s;
+}
+.colorInc:hover {
+  width: 110px;
 }
 button {
   width: 110px;
   height: 45px;
-  /* margin-top: 20px; */
   font-size: 26px;
   border: none;
   border-radius: 0 0 5px 5px;
