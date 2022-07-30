@@ -10,10 +10,10 @@ class App extends Component {
     disabledInc: false,
   };
   handleNumber(e) {
-    this.setState({ number: Number(e.target.value) });
+    this.setState({ number: Math.floor(Number(e.target.value)) });
   }
   handleSeconds(e) {
-    this.setState({ seconds: Number(e.target.value) });
+    this.setState({ seconds: Math.floor(Number(e.target.value)) });
   }
 
   handleDec = () => {
